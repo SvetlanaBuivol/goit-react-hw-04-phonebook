@@ -8,6 +8,7 @@ export const Label = styled.label`
   margin-bottom: 16px;
   svg {
     color: #999;
+    cursor: pointer;
   }
 `;
 
