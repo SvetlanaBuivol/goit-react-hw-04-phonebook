@@ -8,7 +8,7 @@ import { ContactListContainer, Phonebook, H2 } from './App.styled';
 
 export default function App() {
 
-  const [contacts, setContacts] = useState(()=>JSON.parse(localStorage.getItem('contacts') ?? ''));
+  const [contacts, setContacts] = useState(()=>JSON.parse(localStorage.getItem('contacts') )?? []);
   const [filter, setFilter] = useState('');
   
   useEffect(() => {
